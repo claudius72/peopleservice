@@ -1,0 +1,12 @@
+package com.velox.cloud.ms.rest.PeopleService;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class PeopleServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PeopleServiceApplication.class, args);
+	}
+}
