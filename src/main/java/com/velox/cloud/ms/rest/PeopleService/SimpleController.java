@@ -12,7 +12,7 @@ public class SimpleController {
     @Value("${spring.application.name}")
     String appName;
  
-    @GetMapping("/here")
+    @GetMapping("/home")
     public String homePage(Model model) {
         model.addAttribute("appName", appName);
         return "home";
