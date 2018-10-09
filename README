@@ -1,0 +1,19 @@
+// TEST HTTP POST Method
+
+curl -d {\"name\":\"vasi\",\"age\":33} -H "Content-Type: application/json" -X POST http://localhost:8081/api/person
+
+
+// TEST HTTP GET Method
+curl -i -X GET http://localhost:8081/api/person
+
+// Mongo shell commands
+db.getCollection("people").find({});
+db.getCollection("people").createIndex({"name":1}, {unique:true});
+db.getCollection('people').remove({ "name": "vasi" });
+
+// Mongo DB Query (Mongo SQL)
+select * from people;
+
+people.insert( { name: "becky", age: 9 } );
+
+ 
