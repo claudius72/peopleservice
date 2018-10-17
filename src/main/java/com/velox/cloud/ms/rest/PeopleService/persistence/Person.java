@@ -1,4 +1,4 @@
-package com.velox.cloud.ms.rest.PeopleService;
+package com.velox.cloud.ms.rest.PeopleService.persistence;
 
 public class Person {
 	private String name;

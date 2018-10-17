@@ -16,4 +16,6 @@ select * from people;
 
 people.insert( { name: "becky", age: 9 } );
 
- 
+ // Dockerize app
+ 1. https://www.youtube.com/watch?v=pqux6HO613M
+ 2. https://github.com/spotify/docker-maven-plugin

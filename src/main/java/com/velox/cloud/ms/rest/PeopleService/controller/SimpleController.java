@@ -1,4 +1,6 @@
-package com.velox.cloud.ms.rest.PeopleService;
+package com.velox.cloud.ms.rest.PeopleService.controller;
+
+import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -12,6 +14,11 @@ public class SimpleController {
     @Value("${spring.application.name}")
     String appName;
  
+    @PostConstruct
+    public void init() {
+    	System.out.println("appName = "  + appName);
+    }
+    
     @GetMapping("/home")
     public String homePage(Model model) {
         model.addAttribute("appName", appName);
